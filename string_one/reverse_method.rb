@@ -1,0 +1,1 @@
+puts "ruby is fun".upcase.reverse.downcase
