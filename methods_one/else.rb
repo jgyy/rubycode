@@ -7,3 +7,9 @@ def odd_or_even(number)
 end
 
 p odd_or_even(11)
+
+def test
+    42
+end
+
+p test
