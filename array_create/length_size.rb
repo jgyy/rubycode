@@ -1,0 +1,1 @@
+p [1, nil, 2, 3, nil, 4, "Hello", nil, true].count(true)
