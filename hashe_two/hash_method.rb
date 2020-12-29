@@ -16,3 +16,6 @@ end
 p calculate_total_2(tax: 0.05, tip: 0.3, price: 9.99)
 p calculate_total_2({tax: 0.05, tip: 0.3, price: 9.99})
 p calculate_total_2 tax: 0.05, tip: 0.3, price: 9.99
+
+p calculate_total_2(bill)
+p calculate_total_2(new_bill)
