@@ -1,6 +1,6 @@
 phrase = "The Ruby Programming Language is amazing!"
 startstr = "The"
-endstr = "zing!"
+endstr = "zing!"        
 
 def custom_start_with?(string, substring)
     string[0...substring.length] == substring
