@@ -6,10 +6,12 @@ class Gadget
     end
 
     def info
-        "Gadget #{@production_number} has the username #{@username}"
+        "Gadget #{@production_number} has the username #{@username}. It is made from the #{self.class} class and it has the id #{self.object_id}"
     end
 end
 
 phone = Gadget.new
-puts phone.respond_to?(:to_s)
-puts phone.to_s
+laptop = Gadget.new
+
+puts phone.info
+puts laptop.info
