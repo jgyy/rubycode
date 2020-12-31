@@ -1,4 +1,9 @@
 class Gadget
+
+    attr_accessor :username
+    attr_reader :production_number
+    attr_writer :password
+
     def initialize
         @username = "User#{rand(1..100)}"
         @password = "topsecret"
@@ -8,26 +13,10 @@ class Gadget
     def info
         "Gadget #{@production_number} has the username #{@username}. It is made from the #{self.class} class and it has the id #{self.object_id}"
     end
-
-    def username
-        @username
-    end
-
-    def production_number
-        @production_number
-    end
-
-    def username=(new_username)
-        @username = new_username
-    end
-
-    def password=(new_password)
-        @password = new_password
-    end
 end
 
 phone = Gadget.new
-
 p phone.username
-phone.username=("rubyman")
+phone.username = "secretagentman"
+p phone.production_number
 p phone.username
