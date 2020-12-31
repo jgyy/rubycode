@@ -1,20 +1,16 @@
 class Gadget
 end
 
-puts Gadget.superclass
-puts Gadget.superclass.superclass
+shiny = Gadget.new
+flashy = Gadget.new
 
-phone = Gadget.new
-laptop = Gadget.new
-microwave = Gadget.new
+glossy = shiny
 
-puts phone.respond_to?(:class)
-puts phone.respond_to?(:methods)
-puts phone.respond_to?(:is_a?)
-puts phone.respond_to?(:respond_to?)
-puts phone.respond_to?(:length)
+p glossy.object_id
+p shiny.object_id
+p flashy.object_id
+p glossy.object_id == shiny.object_id
+p glossy == shiny
 
-p phone.methods.sort
-p phone.nil?
-puts laptop.class
-puts microwave.class
+p shiny == flashy
+p glossy == flashy
