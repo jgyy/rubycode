@@ -16,9 +16,18 @@ class Gadget
     def production_number
         @production_number
     end
+
+    def username=(new_username)
+        @username = new_username
+    end
+
+    def password=(new_password)
+        @password = new_password
+    end
 end
 
 phone = Gadget.new
 
-puts phone.username
-puts phone.production_number
+p phone.username
+phone.username=("rubyman")
+p phone.username
