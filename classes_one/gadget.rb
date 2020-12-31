@@ -11,8 +11,5 @@ class Gadget
 end
 
 phone = Gadget.new
-laptop = Gadget.new
-
-puts phone.methods - Object.methods
-puts phone.info
-puts laptop.info
+puts phone.respond_to?(:to_s)
+puts phone.to_s
