@@ -8,10 +8,17 @@ class Gadget
     def info
         "Gadget #{@production_number} has the username #{@username}. It is made from the #{self.class} class and it has the id #{self.object_id}"
     end
+
+    def username
+        @username
+    end
+
+    def production_number
+        @production_number
+    end
 end
 
 phone = Gadget.new
-laptop = Gadget.new
 
-puts phone.info
-puts laptop.info
+puts phone.username
+puts phone.production_number
